@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+h1 {
+  color: white;
+  font-family: "poppins", sans-serif;
+  font-size: 40px;
+}
+
+.container-titre {
+  position: absolute;
+  top: 200px;
+  left: 110px;
+}
+
+.version {
+  color: #ec2929;
+}
+
+p {
+  color: #999999;
+  font-family: "poppins", sans-serif;
+}
+
+.btn-dl {
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  display: flex;
+  text-decoration: none;
+  background-color: #ec2929;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  height: 40px;
+  align-items: center;
+  /* width: 50%; */
+  justify-content: center;
+}
+.btn-dl-prem {
+  margin-top: 30px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  display: flex;
+  text-decoration: none;
+  background-color: #ffae00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  height: 40px;
+  align-items: center;
+  /* width: 50%; */
+  justify-content: center;
+}
+
+.btn-dl:hover {
+  background-color: white;
+  color: #ec2929;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn-dl-prem:hover {
+  background-color: white;
+  color: #ffae00;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image-container {
+  position: relative;
+  width: auto; /* Ajustez la largeur du conteneur selon vos besoins */
+  height: auto; /* Laissez la hauteur automatique pour maintenir le rapport d'aspect */
+}
+
+.image-container img {
+  position: absolute;
+  /* top: 0;
+    right: 0;
+    width: 590px;
+    height: 590px; */
+
+  /* object-fit: cover;  */
+}

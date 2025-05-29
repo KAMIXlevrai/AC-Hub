@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,700|Source+Sans+Pro:300,600,300italic,600italic");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+p {
+    font-family: "poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ffffff;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.bottom-border {
+    padding-bottom: 1em;
+    border-bottom: solid 2px #ec2929;
+}
+
+h3 {
+    display: block;
+    margin-block-start: -0.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align:center ;
+}
+
+p {
+    margin: 0 0 2em 0;
+    font-size: 19px;
+    text-align: center;
+    color: white
+}
+
+section {
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.content {
+    margin-top: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+    max-width: 1600px
+}
+
+.card-img img {
+    border-radius: 5px 5px 0 0;
+    display: block;
+    margin-bottom: 1.75em;
+    margin-left: -1.75em;
+    margin-top: -1.75em;
+    position: relative;
+}
+
+.content .card {
+    padding: 1.75em 1.75em 0.1em 1.75em;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    margin: 1.5em 0 1.5em 0;
+    width: 100%;
+}
+
+.content .card:nth-last-child(2) {
+    margin-right: 3em;
+}
+
+.content .cards {
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.content .card-btn a {
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: #FFF;
+    outline: none;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s all;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.content .card-btn a:hover {
+    transition: 0.3s all;
+    background-color: #333645;
+}
+
+
+
+
+
