@@ -1,0 +1,41 @@
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: #ec2929;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: white;
+  color: #ec2929;
+
+  box-shadow: white 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  color: #ec2929;
+  background-color: white;
+
+  box-shadow: white 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.gradient-title {
+  color: white;
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: block; /* Utilisation de block au lieu de inline-block */
+  margin: 0 auto; /* Ajout de cette ligne pour centrer horizontalement */
+}

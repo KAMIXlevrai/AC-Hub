@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 130%
+}
+
+.nav {
+    top: 0;
+    left : 0;
+    z-index: 99999;
+    height: 75px;
+    width: 100%;
+    /* background-color: #4d4d4d; */
+    position: absolute;
+    display: flex; /* Use flexbox to align vertically */
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    margin-top: 20px
+}
+
+@media (max-width: 718px) {
+    .logo{
+        height: 100%;
+    }
+
+    .nav {
+        margin-top: 0px;
+    }
+
+}
+
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 0px;
+}
+
+.nav > .nav-btn {
+    display: none;
+}
+
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    /* font-size: 18px; */
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+    font-family: "poppins", sans-serif;
+    transition: 0.5s;
+}
+/* .nav-links a:hover {
+    /* ajouter une ligne rouge qui s'affiche progressivement (de gauche a droite) en dessous du lien */
+    transition: 0.5s;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+} */
+
+/* .nav-link-bar {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link-bar::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #e2000f;
+    transition: width .5s;
+    display: block; /* Ajout de cette ligne */
+    border-radius: 30px;
+}
+
+.nav-link-bar:hover::after {
+    width: 100%;
+} */
+.links {
+    *zoom: 1;
+    padding: 50px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background: #313131;
+  }
+  .links:before, .links:after {
+    content: "";
+    display: table;
+  }
+  .links:after {
+    clear: both;
+  }
+.link-effect-14 a {
+    color: #efefef;
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    -moz-transition: ease-out 0.3s;
+    -o-transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
+    font-family: "poppins", sans-serif;
+  }
+  
+  .link-effect-14 a span::before {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top: 2px solid #ec2929;
+    border-left: 2px solid #ec2929;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .link-effect-14 a span::after {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 2px solid #ec2929;
+    border-bottom: 2px solid #ec2929;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .link-effect-14 a::before {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 2px solid #ec2929;
+    border-top: 2px solid #ec2929;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .link-effect-14 a::after {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-left: 2px solid #ec2929;
+    border-bottom: 2px solid #ec2929;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  .link-effect-14 a:hover {
+    color: white;
+  }
+  .link-effect-14 a:hover::before {
+    opacity: 1;
+    right: 5px;
+    top: 5px;
+  }
+  .link-effect-14 a:hover::after {
+    opacity: 1;
+    left: 5px;
+    bottom: 5px;
+  }
+  .link-effect-14 a:hover span::before {
+    opacity: 1;
+    left: 5px;
+    top: 5px;
+  }
+  .link-effect-14 a:hover span::after {
+    opacity: 1;
+    right: 5px;
+    bottom: 5px;
+  }
+  
+
+
+.nav > #nav-check {
+    display: none;
+}
+
+@media (max-width:920px) {
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        border-radius: 10px;
+        top: 75px;
+        left: 0px;
+        z-index: 999;
+    }
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 300px);
+        overflow-y: auto;
+    }
+}
