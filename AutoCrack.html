@@ -1,0 +1,532 @@
+<html>
+  <head>
+    <link rel="icon" href="./Global/logo-page.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+   #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #131212;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      transition: all 1s ease-out;
+   }
+   #preloader img {
+    width: 400px;
+    height: 300px;
+}
+</style>
+</head>
+<body>
+  <div id="preloader" style="opacity: 0; z-index: -1;">
+        <img src="./AutoCrack/preloader.gif" alt="Loading...">
+    </div>
+<style>
+  *::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
+  <title>AC Hub - ContentManager</title>
+  <link rel="stylesheet" href="./AutoCrack/styles-autocrack.css">
+<link rel="stylesheet" href="./AutoCrack/styledlb.css">
+
+
+    <link rel="stylesheet" href="./AutoCrack/navbar.css">
+    <link rel="stylesheet" href="./AutoCrack/font-awesome.css">
+    <link rel="stylesheet" href="./AutoCrack/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+        .profile {
+            width: 330px;
+            height: 100px;
+            position: fixed;
+            bottom: 10;
+            right: 10;
+            border-radius: 5px;
+            background-color: #ec2929;
+            box-shadow: 0 0 2rem black;
+            animation: show-profile 0.5s forwards ease-in-out;
+        }
+        @keyframes show-profile {
+        0% {
+            width: 0;
+        }
+        }
+        .profile .photo, .profile .ctnnt {
+            box-sizing: border-box;
+        }
+        .profile .photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #ec2929;
+            background-color: #fafafa;
+            margin-left: -50px;
+            box-shadow: 0 0 0.5rem #ec2929;
+            animation: rotate-photo 0.5s forwards ease-in-out;
+        }
+        @keyframes rotate-photo {
+        100% {
+            transform: rotate(-360deg);
+        }
+        }
+        .profile .photo img {
+        width: 100%;
+        }
+        .profile .ctnnt {
+            padding: 10px;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .profile .ctnnt::before {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 150px;
+            background-color: #0b0c0f;
+            left: 0;
+            top: -20px;
+            z-index: -1;
+            transform: rotate(-8deg);
+        }
+        .profile .ctnnt .text {
+            margin-top: 20px;
+            margin-left: 12px;
+            color: white;
+            font-family: Raleway;
+        }
+        .profile .ctnnt .text h3, .profile .ctnnt .text h6 {
+            font-weight: normal;
+            margin: 3px 0;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .profile .ctnnt .btn {
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            animation: pop-btn 0.3s both ease-in-out 0.5s;
+        }
+        @keyframes pop-btn {
+        0% {
+            transform: scale(0);
+        }
+        80% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+        }
+        .profile .ctnnt .btn:hover {
+            /* box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5); */
+            box-shadow: 0 0 2rem white;
+
+        }
+        .profile .ctnnt .btn span {
+            width: 60%;
+            height: 2px;
+            position: absolute;
+            background-color: #ec2929;
+            top: 50%;
+            left: 20%;
+            transform: translateY(-50%);
+            animation: to-hamburger 0.3s forwards ease-in-out;
+        }
+        .profile .ctnnt .btn span::before, .profile .ctnnt .btn span::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: #ec2929;
+            transition-duration: 0.3s;
+            transform: rotate(0deg);
+            right: 0;
+        }
+        .profile .ctnnt .btn span::before {
+        margin-top: -7px;
+        }
+        .profile .ctnnt .btn span::after {
+        margin-top: 7px;
+        }
+        .profile .ctnnt .btn.active span {
+        animation: to-arrow 0.3s forwards ease-in-out;
+        }
+        .profile .ctnnt .btn.active span::before, .profile .ctnnt .btn.active span::after {
+        width: 60%;
+        right: -1px;
+        }
+        .profile .ctnnt .btn.active span::before {
+        transform: rotate(45deg);
+        }
+        .profile .ctnnt .btn.active span::after {
+        transform: rotate(-45deg);
+        }
+        @keyframes to-hamburger {
+        from {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+        }
+        @keyframes to-arrow {
+        from {
+            transform: translateY(-50%) rotate(0deg);
+        }
+        to {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        }
+        .profile .box {
+            width: 150px;
+            height: 150px;
+            opacity: 0;
+            border-radius: 50%;
+            /* background-color: rgba(255, 255, 255, 0.7); */
+            position: absolute;
+            top: 50%;
+            right: -40%;
+            transform: translate(-50%, -50%);
+            transition-duration: 0.3s;
+        }
+        .profile .box i {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ececec;
+            font-size: 26px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            left: 18px;
+            top: calc(75px - 50px/2);
+            box-shadow: 0 0 0.5rem #babbbc;
+            transition-duration: 0.3s;
+        }
+        .profile .box i:hover {
+        transition-delay: initial !important;
+        box-shadow: 0 0 0 5px #babbbc;
+        }
+        .profile .box.open {
+        opacity: 1;
+        }
+        .profile .box.open i {
+        left: -275px;
+        }
+        .profile .box.open i:nth-of-type(1) {
+        transform: rotate(-90deg) translateX(120px) rotate(90deg);
+        transition-delay: 0s;
+        }
+        .profile .box.open i:nth-of-type(2) {
+        transform: rotate(-135deg) translateX(120px) rotate(135deg);
+        transition-delay: 0.1s;
+        }
+        .profile .box.open i:nth-of-type(3) {
+        transform: rotate(180deg) translateX(120px) rotate(180deg);
+        transition-delay: 0.2s;
+        }
+        .profile .box.open i:nth-of-type(4) {
+        transform: rotate(45deg) translateX(120px) rotate(-45deg);
+        transition-delay: 0.3s;
+        }
+        .profile .box.open i:nth-of-type(5) {
+        transform: rotate(90deg) translateX(120px) rotate(-90deg);
+        transition-delay: 0.4s;
+        }
+    </style>
+            
+    <div class="nav" style="position: absolute; z-index: 99; top: 40px">
+        <input type="checkbox" id="nav-check">
+        <a href="https://cfinder.xyz/index.php" style="margin-left: 20px"><img src="./Global/Logo.png" class="logo"></a>
+        
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <!-- <div class="nav-links highlightTextIn link-effect-14" id="link-effect-14">
+            
+                <a href="../index.php" class="nav-link-bar"><span>Accueil</span></a>
+                <a href="../jeux.php" class="nav-link-bar"><span>Jeux</span></a>
+                <a href="../support.php" class="nav-link-bar"><span>Support</span></a>
+                <a href="../dmca.php" class="nav-link-bar"><span>Premium</span></a>
+                <a href="../prerequis.php" class="nav-link-bar"><span>Prérequis</span></a>
+                <a><form method="get" action="../jeux.php"><input style="border-radius: 5px; height: 25px" type="text" id="recherche" name="q" placeholder="&#x270e;  Rechercher un mod..."></form></a>
+        </div> -->
+        <section class="links nav-links highlightTextIn">
+                <nav class="link-effect-14" id="link-effect-14">
+                    <a href="./index.html" class="nav-link-bar"><span>Accueil</span></a>
+                    <a href="./AutoCrack.html" class="nav-link-bar"><span>ContentManager</span></a>
+                    <a href="./Mods.html" class="nav-link-bar"><span>Mods</span></a>
+                    <a href="./Tracks.html" class="nav-link-bar"><span>Tracks</span></a>
+                    <a href="./Premium.html" class="nav-link-bar"><span>Premium</span></a>
+                    <a href="./prerequis.html" class="nav-link-bar"><span>Prérequis</span></a>
+                    <a><form method="get" action="https://cfinder.xyz/jeux.php" style="margin:0"><input style="border-radius: 30px; height: 25px" type="text" id="recherche" name="q" placeholder="✎  Rechercher un mod..."></form></a>
+                                    </nav>
+            </section>
+    </div>
+    <script src="./AutoCrack/jquery.min.js.téléchargement"></script>
+        <script>
+            (function() {
+            $('.btn').click(function() {
+                $(this).toggleClass('active');
+                return $('.box').toggleClass('open');
+            });
+
+            }).call(this);
+        </script>
+  
+
+
+
+<header class="showcase">
+  <div style="z-index: -1; position: absolute">
+    <!-- video -->
+    <video autoplay="" muted="" loop="" id="video" style="width: 100%; height: 100%">
+      <source src="https://r2.guns.lol/ebb6c887-d67c-467e-8cfd-8be84b283889.mp4" type="video/mp4">
+  </video></div>
+
+  <div class="showcase-top"></div>
+  <div class="showcase-content">
+    <h1 class="gradient-title">ContentManager - AC Hub</h1>
+    <p class=".date">2025</p>
+
+    <a href="https://acstuff.ru/app/latest.zip">
+    <button>Télécharger dès maintenant</button></a>
+  </div>
+</header>
+<section class="tabs">
+  <div class="container">
+    <div id="tab-1" class="tab-item">
+      <p class="hide-sm">Présentation</p>
+    </div>
+    <div id="tab-2" class="tab-item tab-border">
+      <p class="hide-sm">Obtenir ContentManager</p>
+    </div>
+    <div id="tab-3" class="tab-item">
+      <p class="hide-sm">Avantages</p>
+    </div>
+  </div>
+</section>
+
+<section class="tab-content">
+  <div class="container">
+    <!-- Tab Content 1 -->
+    <div id="tab-1-content" class="tab-content-item">
+      <div class="tab-1-content-inner">
+        <div>
+          <p class="text-lg">
+          L'outil ultime pour télécharger et gérer vos mods en un seul clic.
+          Plus rapide, sans pub, avec mises à jour automatiques et bien plus !
+          </p>
+          <a href="https://acstuff.ru/app/latest.zip" class="btn btn-lg">Découvrir ContentManager</a>
+        </div>
+        <img src="./AutoCrack/content_manager.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- Tab Content 2 -->
+    <div id="tab-2-content" class="tab-content-item show">
+      <div class="tab-2-content-top">
+        <p class="text-lg">Comment obtenir ContentManager ?</p>
+        
+      </div>
+      <p class="text-dark">
+      Pour Obtenir ContentManager Premium, il vous suffis d'obtenir une clef d'activation.
+      </p>
+      <div class="tab-2-content-bottom">
+        <div>
+          <div class="image-container">
+          <img src="./AutoCrack/vip.png" alt="">
+        </div>
+          <p class="text-md">
+            Developper
+          </p>
+          <p class="text-dark2">
+          Accès total au mise à jour ContentManager dès leur sortie, avec toutes les fonctionnalités avant leurs sortie.
+          </p>
+        </div>
+        <div>
+          <div class="image-container">
+          <img src="./AutoCrack/premium.png" alt="">
+        </div>
+          <p class="text-md">
+            Premium
+          </p>
+          <p class="text-dark2">
+          Accès à ContentManager au complet, avec toutes les fonctionnalités illimitées.
+          </p>
+        </div>
+        <div>
+          <div class="image-container">
+          <img src="./AutoCrack/user.png" alt="">
+        </div>
+          <p class="text-md">
+            Membre
+          </p>
+          <p class="text-dark2">
+          Accès au mods sans la possibilité de créé des serveurs de jeu.
+          </p>
+        </div>
+      </div>
+          
+        
+          
+        </div>
+        
+    </div>
+
+    <!-- Tab Content 3 -->
+    <div id="tab-3-content" class="tab-content-item">
+      <div class="text-center">
+        <p class="text-lg">Voici les avantages des différents plans</p>
+        
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Premium</th>
+            <th>Premium</th>
+            <th>Membre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Obtention du rôle</td>
+            <td>Disponible a l'achat</td>
+            <td>Boost le Discord </td>
+            <td>Attribution automatique</td>
+          </tr>
+          <tr>
+            <td>Date de sortie prévu</td>
+            <td>2025</td>
+            <td>2025</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Fin de l'accès</td>
+            <td>A vie</td>
+            <td>Durée du boost</td>
+            <td>Fonctionnalités limitées</td>
+          </tr>
+          <tr>
+            <td>Expérience sans publicité</td>
+            <td>✔️</td>
+            <td>❌</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <td>Nombre de jeux maximum dans la bibliothèque</td>
+            <td><strong>Illimité</strong></td>
+            <td>5</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Protection VPN Torrent incluse</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <td>Mise à jours automatique</td>
+            <td>❌</td>
+            <td>❌</td>
+            <td>❌</td>
+          </tr>
+          <tr>
+            <td>Installation automatique des jeux</td>
+            <td>✔️</td>
+            <td>✔️</td>
+            <td>✔️</td>
+          </tr>
+          <tr>
+            <td>Statut des suggestions de jeux</td>
+            <td>Prioritaire</td>
+            <td>Prioritaire</td>
+            <td>Limité</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  
+</section>
+
+<script>
+  const tabItems = document.querySelectorAll(".tab-item");
+  const tabContentItems = document.querySelectorAll(".tab-content-item");
+
+  // Select tab content item
+  function selectItem(e) {
+    // Remove all show and border classes
+    removeBorder();
+    removeShow();
+    // Add border to current tab item
+    this.classList.add("tab-border");
+    // Grab content item from DOM
+    const tabContentItem = document.querySelector(`#${this.id}-content`);
+    // Add show class
+    tabContentItem.classList.add("show");
+  }
+
+  // Remove bottom borders from all tab items
+  function removeBorder() {
+    tabItems.forEach((item) => {
+      item.classList.remove("tab-border");
+    });
+  }
+
+  // Remove show class from all content items
+  function removeShow() {
+    tabContentItems.forEach((item) => {
+      item.classList.remove("show");
+    });
+  }
+
+  // Listen for tab item click
+  tabItems.forEach((item) => {
+    item.addEventListener("click", selectItem);
+  });
+</script>
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    var startTime = performance.now();
+  
+    // Votre logique de chargement de contenu ici
+  
+    window.onload = function () {
+      var endTime = performance.now();
+      var loadingTime = endTime - startTime;
+    
+      // Cachez le préloader une fois que le contenu est chargé
+      document.getElementById("preloader").style.opacity = 0;
+      //put z-index to -1
+      document.getElementById("preloader").style.zIndex = -1;
+    };
+  });
+</script><script defer="" src="./AutoCrack/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;946f7bb3385f6f79&quot;,&quot;version&quot;:&quot;2025.4.0-1-g37f21b1&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;dbe2061f1f4642529bc41e4e44fbf226&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+</body></html>

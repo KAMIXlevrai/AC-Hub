@@ -1,0 +1,80 @@
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75); /* Fond légèrement plus sombre */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Haut z-index pour couvrir tout le contenu */
+}
+
+.popup {
+  display: flex;
+  flex-direction: column; /* Direction de l'affichage pour empiler les éléments */
+  justify-content: center;
+  align-items: center;
+
+  height: auto; /* Hauteur automatique selon le contenu */
+
+  width: 40%; /* Largeur responsive */
+  max-width: 400px; /* Largeur maximale pour éviter que la boîte ne soit trop grande */
+
+  background-color: #111111;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ajout d'ombre pour mieux ressortir */
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Technique de centrage exact */
+  z-index: 1001; /* Plus élevé que l'overlay */
+  transition: 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+.popup:hover {
+  transform: translate(-50%, -50%) scale(1.01);
+}
+
+.popup-image {
+  cursor: pointer;
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: auto; /* Hauteur automatique selon la largeur */
+  max-height: 100%; /* Max-height moins la hauteur estimée du bouton */
+  object-fit: cover; /* L'image s'adapte sans déborder */
+}
+
+.close-btn-pp {
+  background-color: #111111;
+  border: 2px solid #ec2929;
+  color: #ec2929;
+
+  padding: 10px 20px;
+  cursor: pointer;
+
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Espacement au-dessus du bouton */
+  width: 40%; /* Largeur relative pour être responsive */
+  max-width: 240px; /* Largeur maximale du bouton pour éviter qu'il soit trop large */
+
+  transition: background-color 0.2s, color 0.2s; /* Animation de transition sur hover */
+}
+
+.close-btn-pp:hover {
+  background-color: #ec2929;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
