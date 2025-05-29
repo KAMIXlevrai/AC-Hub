@@ -1,0 +1,1633 @@
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    * {
+        font-family: 'poppins', sans-serif;
+    }
+</style>
+<style>
+    /* everyone in poppins */
+    * {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+<link rel="icon" href="../Global/logo-page.png">
+
+<!-- <div id="color" style="top: 0px; left: 0px;width: 100%; height: 100%; background-color: #ec2929 ; opacity: 1; transition: opacity 0.3s; position:fixed; z-index:10"></div>
+<div id="all"> -->
+<meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9wSqI5i0iwGdf6L1CERNdmsTPgVu44ewj8QxTBYgsv1LCPUVF7YmWOvTappqB1139jAymxUW/RO8zmMqo4zlAAAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+d7vJfYtay4OUbdtRPZA3y7bKQLsxaMEPmxgfhBGqKXNrdkCQeJlUwqa6EBbSfjwFtJWTrWIioXeMW+y8bWAgQAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MzY4MTI4MDAsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"></head><body style="background-color: #0A0A0A" id="bod"><div style="height: calc(100% + 80px);">
+    
+    
+    
+    <meta name="robots" content="index,follow">
+        
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta content="AC Hub, Le meilleur site de mod Asseto Corsa" property="og:title">
+        <meta content="Obtenir tout les mods AC gratuitements, sans virus et sans pub" property="og:description">
+        <meta content="https://cfinder.xyz/" property="og:url">
+        <meta content="#ffffff" data-react-helmet="true" name="theme-color">
+        <script src="../Global/mods/f.txt"></script><script async="" src="../Global/mods/f(1).txt" crossorigin="anonymous" data-checked-head="true"></script>
+        <script src="../Global/mods/jquery.min.js.téléchargement" charset="utf-8"></script>
+        <script src="../Global/mods/jquery-3.6.0.min.js.téléchargement"></script>
+        <script async="" src="../Global/mods/f(1).txt" crossorigin="anonymous" data-checked-head="true"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async="" src="../Global/mods/js"></script>
+        <link rel="stylesheet" href="../Global/mods/css">
+      <link rel="stylesheet" href="../Global/mods/css(1)">
+        <style>
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #131212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+
+          }
+          
+          #preloader img {
+            width: 400px;
+            height: 300px;
+          }
+          #preloader.hidden {
+            opacity: 0;
+            pointer-events: none; 
+          }
+          #bod {
+            padding: 50px;
+            overflow-x: hidden;
+          }
+          @media (max-width: 920px) {
+            #bod {
+              padding: 3px;
+            }
+          }
+        </style>
+        <script>
+window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-H50ESS2DF3');
+        </script>
+        <title>Pure Highres</title>
+        <link rel="shortcut icon" href="./Global/logo-page.png" type="image/x-icon">
+        <link rel="stylesheet" href="../Global/mods/main.css">
+        <meta name="description" content="Téléchargez Pure Highres sur PC gratuitement ! Accédez au crack fonctionnel dès sa sortie et profitez d&#39;une installation rapide et sans virus.">
+
+        <meta name="keywords" content="Pure Highres PC crack, Télécharger Pure Highres PC, Pure Highres gratuit, Pure Highres download, Crack Pure Highres PC, Pure Highres full version, Télécharger Pure Highres gratuitement, Install Pure Highres sur PC, Pure Highres PC free download, Jeu Pure Highres PC, Pure Highres PC torrent, Pure Highres PC repack, Pure Highres PC FitGirl, Pure Highres Steam, Pure Highres PC fr, Pure Highres PC FitGirl, Pure Highres Steam, Pure Highres PC fr, Pure Highres PC cfinder">
+    
+        <link rel="stylesheet" href="../Global/mods/navbar.css">
+    <link rel="stylesheet" href="../Global/mods/font-awesome.css">
+    <link rel="stylesheet" href="../Global/mods/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <style>
+        @import 'https://fonts.googleapis.com/css?family=Raleway';
+
+
+        .profile {
+            width: 330px;
+            height: 100px;
+            position: fixed;
+            bottom: 10;
+            right: 10;
+            border-radius: 5px;
+            background-color: #ec2929;
+            box-shadow: 0 0 2rem black;
+            animation: show-profile 0.5s forwards ease-in-out;
+        }
+        @keyframes show-profile {
+        0% {
+            width: 0;
+        }
+        }
+        .profile .photo, .profile .ctnnt {
+            box-sizing: border-box;
+        }
+        .profile .photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #ec2929;
+            background-color: #fafafa;
+            margin-left: -50px;
+            box-shadow: 0 0 0.5rem #ec2929;
+            animation: rotate-photo 0.5s forwards ease-in-out;
+        }
+        @keyframes rotate-photo {
+        100% {
+            transform: rotate(-360deg);
+        }
+        }
+        .profile .photo img {
+        width: 100%;
+        }
+        .profile .ctnnt {
+            padding: 10px;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        .profile .ctnnt::before {
+            content: "";
+            position: absolute;
+            width: 230px;
+            height: 150px;
+            background-color: #0b0c0f;
+            left: 0;
+            top: -20px;
+            z-index: -1;
+            transform: rotate(-8deg);
+        }
+        .profile .ctnnt .text {
+            margin-top: 20px;
+            margin-left: 51px;
+            color: white;
+            font-family: Raleway;
+        }
+        .profile .ctnnt .text h3, .profile .ctnnt .text h6 {
+            font-weight: normal;
+            margin: 3px 0;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .profile .ctnnt .btn {
+            background-color: white;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            border-radius: 50%;
+            z-index: 1;
+            cursor: pointer;
+            transition-duration: 0.3s;
+            animation: pop-btn 0.3s both ease-in-out 0.5s;
+        }
+        @keyframes pop-btn {
+        0% {
+            transform: scale(0);
+        }
+        80% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+        }
+        .profile .ctnnt .btn:hover {
+            /* box-shadow: 0 0 0 5px rgba(170, 187, 204, 0.5); */
+            box-shadow: 0 0 2rem white;
+
+        }
+        .profile .ctnnt .btn span {
+            width: 60%;
+            height: 2px;
+            position: absolute;
+            background-color: #ec2929;
+            top: 50%;
+            left: 20%;
+            transform: translateY(-50%);
+            animation: to-hamburger 0.3s forwards ease-in-out;
+        }
+        .profile .ctnnt .btn span::before, .profile .ctnnt .btn span::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: #ec2929;
+            transition-duration: 0.3s;
+            transform: rotate(0deg);
+            right: 0;
+        }
+        .profile .ctnnt .btn span::before {
+        margin-top: -7px;
+        }
+        .profile .ctnnt .btn span::after {
+        margin-top: 7px;
+        }
+        .profile .ctnnt .btn.active span {
+        animation: to-arrow 0.3s forwards ease-in-out;
+        }
+        .profile .ctnnt .btn.active span::before, .profile .ctnnt .btn.active span::after {
+        width: 60%;
+        right: -1px;
+        }
+        .profile .ctnnt .btn.active span::before {
+        transform: rotate(45deg);
+        }
+        .profile .ctnnt .btn.active span::after {
+        transform: rotate(-45deg);
+        }
+        @keyframes to-hamburger {
+        from {
+            transform: translateY(-50%) rotate(-180deg);
+        }
+        }
+        @keyframes to-arrow {
+        from {
+            transform: translateY(-50%) rotate(0deg);
+        }
+        to {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        }
+        .profile .box {
+            width: 150px;
+            height: 150px;
+            opacity: 0;
+            border-radius: 50%;
+            /* background-color: rgba(255, 255, 255, 0.7); */
+            position: absolute;
+            top: 50%;
+            right: -40%;
+            transform: translate(-50%, -50%);
+            transition-duration: 0.3s;
+        }
+        .profile .box i {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ececec;
+            font-size: 26px;
+            text-align: center;
+            line-height: 50px;
+            position: absolute;
+            left: 18px;
+            top: calc(75px - 50px/2);
+            box-shadow: 0 0 0.5rem #babbbc;
+            transition-duration: 0.3s;
+        }
+        .profile .box i:hover {
+        transition-delay: initial !important;
+        box-shadow: 0 0 0 5px #babbbc;
+        }
+        .profile .box.open {
+        opacity: 1;
+        }
+        .profile .box.open i {
+        left: -275px;
+        }
+        .profile .box.open i:nth-of-type(1) {
+        transform: rotate(-90deg) translateX(120px) rotate(90deg);
+        transition-delay: 0s;
+        }
+        .profile .box.open i:nth-of-type(2) {
+        transform: rotate(-135deg) translateX(120px) rotate(135deg);
+        transition-delay: 0.1s;
+        }
+        .profile .box.open i:nth-of-type(3) {
+        transform: rotate(180deg) translateX(120px) rotate(180deg);
+        transition-delay: 0.2s;
+        }
+        .profile .box.open i:nth-of-type(4) {
+        transform: rotate(45deg) translateX(120px) rotate(-45deg);
+        transition-delay: 0.3s;
+        }
+        .profile .box.open i:nth-of-type(5) {
+        transform: rotate(90deg) translateX(120px) rotate(-90deg);
+        transition-delay: 0.4s;
+        }
+        .inp_search_bar {
+            width: 200px;
+            transition: width 0.4s ease-in-out;
+        }
+        .inp_search_bar:focus {
+            width: 300px;
+        }
+
+        .container-suggestions {
+            position: relative;
+            display: inline-block;
+        }
+
+        .suggest-items {
+            position: absolute;
+            margin-left: 20px;
+            display: none;
+            width: 300px;
+        }
+
+        .suggestion {
+            position: relative;
+            opacity: 1;
+            width: 100%;
+            height: 100px;
+            background-color: #111111;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            /* z-index: 9999; */
+            transform: translateX(0);
+            transition: 0.5s ease-out;
+            margin-bottom: 10px;
+        }
+
+        .suggestion.hide {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        .suggestion:hover {
+            cursor: pointer;
+            transform: scale(1.03);
+            box-shadow: 0 0 1rem black;
+        }
+
+        .inside-suggestion {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .thumb-crack {
+            width: 100%;
+            height: 81%;
+            border-radius: 10px;
+        }
+
+        .see-more {
+            position: absolute;
+            width:300px;
+            height: 30px;
+            background-color: #111111;
+            color: white;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            top: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+            display: none;
+            font-size: 17px;
+            transition: all 0.5s ease-out;
+        }
+
+        .see-more:hover {
+            background-color: #ec2929;
+            color: black;
+            transform: scale(1.03);
+            box-shadow: 0 0 1rem #ec2929;
+        }
+
+        
+    </style>
+            
+    <div class="nav" style="margin-top: 53px">
+        <input type="checkbox" id="nav-check">
+        <a href="../index.html" style="margin-left: 20px"><img src="../Global/Logo.png" class="logo"></a>
+        
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <!-- <div class="nav-links highlightTextIn link-effect-14" id="link-effect-14">
+            
+                <a href="../index.php" class="nav-link-bar"><span>Accueil</span></a>
+                <a href="../jeux.php" class="nav-link-bar"><span>Jeux</span></a>
+                <a href="../support.php" class="nav-link-bar"><span>Support</span></a>
+                <a href="../dmca.php" class="nav-link-bar"><span>Premium</span></a>
+                <a href="../prerequis.php" class="nav-link-bar"><span>Prérequis</span></a>
+                <a><form method="get" action="../jeux.php"><input style="border-radius: 5px; height: 25px" type="text" id="recherche" name="q" placeholder="&#x270e;  Rechercher un mod..."></form></a>
+        </div> -->
+        <section class="links nav-links highlightTextIn">
+                <nav class="link-effect-14" id="link-effect-14">
+                    <a href="../index.html" class="nav-link-bar"><span>Accueil</span></a>
+                    <a href="../AutoCrack.html" class="nav-link-bar"><span>ContentManager</span></a>
+                    <a href="../Mods.html" class="nav-link-bar"><span>Mods</span></a>
+                    <a href="../Tracks.html" class="nav-link-bar"><span>Tracks</span></a>
+                    <a href="../Premium.html" class="nav-link-bar"><span>Premium</span></a>
+                    <a href="../prerequis.html" class="nav-link-bar"><span>Prérequis</span></a>
+                    <div class="container-suggestions">
+                        <a><form method="get" action="https://cfinder.xyz/jeux.php" style="margin:0"><input style="border-radius: 30px; height: 25px; color:black; border: none; padding: 5px" class="inp_search_bar" type="text" id="recherche" name="q" placeholder="✎  Rechercher un mod..."></form></a>
+                        <div class="suggest-items" id="div1"></div>
+                        <div class="see-more" id="div2" style="top: 50px;">+</div>
+                    </div>
+                                    </nav>
+            </section>
+    </div>
+    <script>
+
+       $(document).ready(function () {
+        let cache = {}; // Cache pour stocker les résultats des recherches
+        let debounceTimeout = null; // Pour gérer le délai de debounce
+
+        const renderSuggestions = (data) => {
+            const suggestionsContainer = $(".suggest-items");
+            const existingSuggestions = $(".suggestion");
+
+            data.forEach((item) => {
+                const exists = existingSuggestions.filter(
+                    (_, el) => $(el).find("h4").text() === item.name
+                ).length;
+
+                if (!exists) {
+                    const suggestionHTML = `
+                    <div class="suggestion" onclick="location.href='jeux.php?link=${item.id}'">
+                        <div class="inside-suggestion">
+                            <div style="width: 100%">
+                                <img class="thumb-crack" src="${item.img_webhook}" alt="${item.name}" />
+                            </div>
+                            <div style="width: 50px"></div>
+                            <div style="width: 100%">
+                                <h4 style="max-width: 125px; font-size: 14px; overflow-wrap: break-word; white-space: normal;">${item.name.length > 30 ? item.name.substring(0, 30) + "..." : item.name}</h4>
+                                <p style="font-size: 11px">${item.category}</p>
+                            </div>
+                        </div>
+                    </div>`;
+                    suggestionsContainer.append(suggestionHTML);
+                }
+            });
+
+            existingSuggestions.each(function () {
+                const title = $(this).find("h4").text();
+                const stillExists = data.some((item) => item.name === title);
+
+                if (!stillExists) {
+                    $(this).addClass("hide").css("transform", "translateX(100%)");
+                    setTimeout(() => {
+                        $(this).remove();
+                    }, 500);
+                }
+            });
+        };
+
+        const fetchSuggestions = (query) => {
+            if (cache[query]) {
+                // Si les résultats sont en cache, les retourner directement
+                return Promise.resolve(cache[query]);
+            }
+            return $.ajax({
+                url: "fetch_database.php", // URL vers votre script PHP
+                method: "GET",
+                data: { query },
+                dataType: "json",
+            }).then((data) => {
+                cache[query] = data; // Stocker les résultats dans le cache
+                return data;
+            });
+        };
+
+        const showSuggestions = () => {
+            $(".suggest-items").fadeIn(100);
+            $("#div2").css("display", "block");
+        };
+
+        const hideSuggestions = () => {
+            $(".suggest-items").fadeOut(100);
+            $("#div2").css("display", "none");
+        };
+
+        const debounce = (func, delay) => {
+            return function (...args) {
+                clearTimeout(debounceTimeout);
+                debounceTimeout = setTimeout(() => func.apply(this, args), delay);
+            };
+        };
+
+        const handleInput = debounce(function () {
+            const query = $("#recherche").val();
+            $("#div2").click(() => {
+                location.href = `jeux.php?q=${query}`;
+            });
+            if (query.length < 3) { // Condition pour ne pas afficher si moins de 3 caractères
+                renderSuggestions([]);
+                hideSuggestions();
+                return;
+            }
+            fetchSuggestions(query).then((filteredSuggestions) => {
+                renderSuggestions(filteredSuggestions);
+                showSuggestions();
+            });
+        }, 300); // Débouncer avec un délai de 300 ms
+
+        $("#recherche").on("input", handleInput);
+
+        $("#recherche").focus(function () {
+            const query = $(this).val();
+            if (query.length < 3) { // Condition pour ne pas afficher si moins de 3 caractères
+                renderSuggestions([]);
+                hideSuggestions();
+                return;
+            }
+            fetchSuggestions(query).then((filteredSuggestions) => {
+                if (filteredSuggestions.length > 0) {
+                    renderSuggestions(filteredSuggestions);
+                    showSuggestions();
+                }
+            });
+        });
+
+        $("#recherche").blur(function () {
+            setTimeout(() => {
+                hideSuggestions();
+            }, 200);
+        });
+
+        renderSuggestions([]);
+    });
+
+
+
+
+
+
+    </script>
+        <script>
+            (function() {
+            $('.btn').click(function() {
+                $(this).toggleClass('active');
+                return $('.box').toggleClass('open');
+            });
+
+            }).call(this);
+        </script>
+        <script>
+            const div1 = document.getElementById('div1');
+            const div2 = document.getElementById('div2');
+
+            // Créer un ResizeObserver pour div1
+            const resizeObserver = new ResizeObserver((entries) => {
+                for (let entry of entries) {
+                // Récupérer la hauteur de div1
+                const newHeight = entry.contentRect.height;
+
+                // Ajuster dynamiquement la position de div2
+                div2.style.top = `${newHeight+50}px`;
+                }
+            });
+
+            // Observer les changements de dimensions de div1
+            resizeObserver.observe(div1);
+        </script>
+        <div style="height:100px"></div>
+
+    <svg width="0" height="0" viewBox="0 0 400 300">
+        <defs>
+            <mask id="mask">
+                <rect fill="#000000" x="0" y="0" width="400" height="300"></rect>
+                <circle fill="#FFFFFF" cx="150" cy="150" r="100"></circle>
+                <circle fill="#FFFFFF" cx="50" cy="50" r="150"></circle>
+            </mask>
+        </defs>
+    </svg>
+    <style>
+        .container-titre {
+            display: grid;
+        }
+    </style>
+
+    <link rel="stylesheet" href="../Global/mods/crack.css">
+    <link rel="stylesheet" href="../Global/mods/carousel.css">
+    <link rel="stylesheet" href="../Global/mods/style_btn.css">
+
+    <style>
+        .da2 {
+            display: flex;
+            justify-content: right
+        }
+
+        #mainct {
+            margin-right: -60px;
+        }
+
+        #titr {
+            font-size: 52px;
+        }
+
+        #dcs {
+            font-size: 20px;
+        }
+
+        #vsaimeriez {
+            font-size: 40px;
+        }
+
+        .imtrend {
+            width: 562px;
+        }
+
+        /* Styles pour les écrans plus petits que 920px */
+        @media (max-width: 920px) {
+            .v-ctner {
+                display: none;
+                /* Masquer la div v-ctner */
+            }
+
+            .t-ctner {
+                width: 100%;
+                /* Prend la largeur totale */
+                text-align: center;
+                /* Centre le texte horizontalement */
+            }
+
+            .da {
+                display: none;
+            }
+
+            .carrouss {
+                width: 100%;
+
+            }
+
+            #slide-container {
+                height: 330px;
+                width: 100%;
+            }
+
+            #window {
+                width: 100%;
+            }
+
+            .youmaylike {
+                flex-direction: column;
+                width: 100%
+            }
+
+            #titr {
+                font-size: 32px;
+
+            }
+
+            #dcs {
+                font-size: 16px;
+                max-height: 170px;
+                overflow: hidden;
+            }
+
+            #vsaimeriez {
+                font-size: 22px;
+            }
+
+            p {
+                font-family: poppins;
+            }
+
+            .imtrend {
+                width: 350px;
+            }
+
+            #mainct {
+                margin: 0;
+            }
+        }
+    </style>
+    
+
+    <div style="display: flex; align-items: center" id="mainct">
+        <div class="t-ctner" style="width: 50%;flex:1">
+            <div style="padding: 70px">
+                <div>
+                    <h1 style=" font-weight: 900" id="titr">
+                        Pure Highres <span class="version"> v2.57</span>
+                    </h1>
+                </div>
+                <div>
+                    <p id="dcs" style="width: 100%;word-wrap: break-word;">Mod Graphique</p>
+                </div>
+                <!-- <a class="btn-dl" id="myBtn"><b>telecharger</b></a> -->
+                <div class="w-full flex items-center justify-center aa" style="margin-top: 40px">
+                    <a id="myBtn" href="https://modsfire.com/W35ZORGC8TyBta5" target="_blank" rel="noopener noreferrer" class="aa relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
+                        <span class="aa absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
+                            <svg class="aa w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </span>
+                        <span class="aa absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease" style="font-family: &#39;poppins&#39;, sans-serif">Télécharger</span>
+                        <span class="relative invisible">Télécharger</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="v-ctner" style="overflow: hidden;position: relative;flex:1;width: 50%;">
+                            <video class="rend" width="590" height="590" autoplay="" loop="" muted="" style="
+                    width: 200%;
+                    left: -50%;
+                    position: absolute;
+                    height: 748px;
+                    max-width: none;
+                ">
+                    <source src="https://r2.guns.lol/ebb6c887-d67c-467e-8cfd-8be84b283889.mp4" type="video/webm">
+                    Votre navigateur ne supporte pas la lecture de cette vidéo.
+                </video>             <img class="rend" src="../Global/mods/xxlayer_2.png" style="
+    top: -1px;
+    position: relative;
+    height: 750px;
+    z-index: 3;
+">
+        </div>
+    </div>
+<script defer="" src="../Global/mods/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;9475d1a4fcef6f5a&quot;,&quot;version&quot;:&quot;2025.4.0-1-g37f21b1&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;dbe2061f1f4642529bc41e4e44fbf226&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+</div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="../Global/mods/ads.html" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins>
+<!-- <div class="tel" style="position: absolute; top: 50%; left: 50%; width: 100%; transform: translate(-50%, -50%); padding: 20px; border-radius: 10px" align="center">
+    <h2 style="color: white">Cette page n'est pas accessible sur smartphone.</h2><br>
+    <a href="index.php" style="text-decoration: none; color: blue; text-transform: uppercase; font-family: 'poppins', sans-serif">Retourner à l'acceuil</a>
+</div> -->
+<div style="margin-left:-60px; margin-right:-60px; margin-bottom: -60px; padding: 0" id="scnd">
+    <style>
+        .nonscroll {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .slide {
+            transition: all 2s ease-out;
+        }
+    </style>
+    <div style="display: flex; align-items: center">
+        <div style="flex: 1" class="da"><img class="nonscroll" src="../Global/mods/layer_left.png"></div>
+
+        <div style="flex: 1" class="carrouss">
+            <div id="window">
+                <div id="slide-container">
+                    <div class="slides" style="display: block;">
+
+                        <!-- First image -->
+                        <img class="slide" src="../Global/mods/img1.jpeg">
+                    </div>
+
+                    <!-- Second image -->
+                    <div class="slides" style="display: none;">
+                        <img class="slide" src="../Global/mods/img2.jpg">
+                    </div>
+
+                    <!-- Third image -->
+                    <div class="slides" style="display: none;">
+                        <img class="slide" src="../Global/mods/img3.jpg">
+                    </div>
+                    <a id="previous" class="arrow">❮</a>
+                    <a id="next" class="arrow">❯</a>
+                    <div id="text-bar" style="display: none">
+                        <p id="place">Amsterdam, The Netherlands</p>
+                    </div>
+                </div>
+                <div id="dotsContainer"><span class="dots activeDot"></span><span class="dots"></span><span class="dots"></span></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var index = 0;
+        var locations = ["Amsterdam, The Netherlands", "Sydney, Australia", "San Francisco, California"]
+
+        var slides = document.getElementsByClassName("slides");
+        var nextArrow = document.getElementById("next");
+
+        var previousArrow = document.getElementById("previous");
+
+        var place = document.getElementById("place");
+
+        var dotsContainer = document.getElementById("dotsContainer");
+
+        var dotArray = document.getElementsByClassName("dots");
+
+        createDots();
+        showSlides(index);
+
+        function createDots() {
+            for (i = 0; i < slides.length; i++) {
+                var dot = document.createElement("span");
+                dot.className = "dots";
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function showSlides(x) {
+            if (x > slides.length - 1) {
+                index = 0;
+            }
+            if (x < 0) {
+                index = slides.length - 1;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dotArray[i].className = "dots";
+            }
+
+            slides[index].style.display = "block";
+            dotArray[index].className += " activeDot";
+            place.innerHTML = locations[index];
+        }
+
+        nextArrow.onclick = function() {
+            index += 1;
+            showSlides(index);
+        }
+
+        previousArrow.onclick = function() {
+            index -= 1;
+            showSlides(index);
+        }
+
+        dotArray[0].onclick = showSlides(1);
+    </script>
+
+    <style>
+        .imtrend {
+            height: 270px;
+            object-fit: cover;
+            border-radius: 10px;
+            /* margin: 10px; */
+            transition: 0.5s;
+            margin: 16px;
+        }
+
+        .imtrend:hover {
+            transform: scale(1.05);
+            /* box-shadow: 0 0 1rem red; */
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <div align="center" style="width: 100%; margin-top: 150px; margin-bottom: 150px">
+        <div class="infos" id="verif" align="center">
+            <img src="../Global/mods/cards/1.png" class="cdecan" style="width:300px;">
+            <img src="../Global/mods/cards/2.png" class="cdecan" style="width:300px">
+            <img src="../Global/mods/cards/3.png" class="cdecan" style="width:300px">
+        </div>
+    </div>
+    <div style="display: flex">
+        <div style="flex: 1;">
+            <div align="center">
+                <h1 style="color: white" id="vsaimeriez">Les essentiels ...</h1>
+            </div>
+            <div style="display: flex" class="youmaylike">
+                                    <div style="margin: 20px; flex: 1" align="center"><a href="https://www.win-rar.com/postdownload.html?&L=10"><img class="imtrend" src="../Global/mods/image.png">
+                            <p style="color: white;">Winrar</p>
+                        </a></div>
+                    <div style="margin: 20px; flex: 1" align="center"><a href="../AutoCrack.html"><img class="imtrend" src="../Global/mods/image2.png">
+                            <p style="color: white;">ContentManager</p>
+                        </a></div>
+                
+
+            </div>
+        </div>
+        <div style="flex: 1;" class="da da2"><img class="nonscroll" src="../Global/mods/layer_right.png"></div>
+    </div>
+
+
+    <!-- <img src='assets/arrow.png' style="z-index:99; position: absolute; top: 90%; left: 50%; transform :translate(-50%, -50%); width: 40px"> -->
+    <link rel="stylesheet" href="../Global/mods/arrow.css">
+    <div id="cscroll" class="container-arrow" style="z-index:99; position: absolute; top: 92%; left: 50%; transform :translate(-50%, -50%);">
+        <div class="content-arrow">
+            <svg id="more-arrows">
+                <polygon class="arrow-top" points="37.6,27.9 1.8,1.3 3.3,0 37.6,25.3 71.9,0 73.7,1.3 "></polygon>
+                <polygon class="arrow-middle" points="37.6,45.8 0.8,18.7 4.4,16.4 37.6,41.2 71.2,16.4 74.5,18.7 "></polygon>
+                <polygon class="arrow-bottom" points="37.6,64 0,36.1 5.1,32.8 37.6,56.8 70.4,32.8 75.5,36.1 "></polygon>
+            </svg>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            // scroll to bottom
+            document.getElementById('cscroll').addEventListener('click', function() {
+                document.getElementById('scnd').scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" href="../Global/mods/popup.css">
+    <!-- ***** Header Area Start ***** -->
+    <div id="myModal" class="modal" style="z-index:9999999">
+        <!-- Modal content -->
+        <div id="modalContent" class="modal-content zoom-in">
+            <span class="close" align="right">×</span>
+            <div>
+                <div style="display: flex">
+                    <div style="margin-right: 2px">
+                        <div align="center">
+                            <h2><b>Tutoriel <span style="color: red">LootLabs</span></b></h2>
+                        </div>
+                        <iframe width="640" height="360" src="../Global/mods/r8blT_7wORI.html" title="Tutoriel Téléchargement cFinder - 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    </div>
+                    <div style="margin-left: 2px">
+                        <div align="center">
+                            <h2><b>Configuration <spam style="color: red">requise</spam></b></h2>
+                        </div>
+
+
+                        Minimale&nbsp;:Système d'exploitation et processeur 64 bits nécessairesSystème d'exploitation&nbsp;: Windows® 10 64 bits (dernière mise à jour)Processeur&nbsp;: Intel® Core™ i3-6100 / Core™ i5-2500K ou AMD Ryzen™ 3 1200Mémoire vive&nbsp;: 8&nbsp;GB de mémoireGraphiques&nbsp;: NVIDIA® GeForce® GTX 960 ou système compatible AMD Radeon™ RX 470 - DirectX 12.0DirectX&nbsp;: Version 12Réseau&nbsp;: connexion internet haut débitEspace disque&nbsp;: 125&nbsp;GB d'espace disque disponible                    </div>
+                </div>
+                <div class="c-link" align="center" style="margin-top: 20px">
+                                            <a href="https://directory.cfinder.xyz/index.php?id=1499" class="link-dl"><b>TELECHARGER</b></a>
+                                    </div>
+
+
+                <br>
+                <div class="separator"></div>
+                <div align="center">
+                    <h2><b>Comment installer <span style="color: red">Le Jeu</span></b></h2>
+                </div><br>
+
+                1)・Télécharger le jeu et ouvrir le .torrent à l’aide de qBittorrent | Transmission<br>
+2) ・Attendre la fin du téléchargement<br>
+3) ・Télécharger le Patch V2 dans "Autre"<br>
+4) ・Extraire le contenu de l'archive dans la racine du jeu (Le dossier Call of Duty) <br>
+5) ・Lancez le "Install.bat" Puis le "CODLauncher.exe" dans le dossier Call Of Duty <br>
+6) ・Amusez-vous ;)            </div>
+        </div>
+        
+        <!-- ***** Header Area End ***** -->
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+            modalContent.classList.add("zoom-in");
+        };
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modalContent.classList.add("zoom-out");
+
+            // Ajouter une classe pour déclencher l'animation de zoom-out après un délai
+            setTimeout(function() {
+                modal.style.display = "none";
+                modalContent.classList.remove("zoom-out");
+            }, 300); // Attendre 300 ms (0.3s) avant de cacher la pop-up
+        };
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modalContent.classList.add("zoom-out");
+
+                // Ajouter une classe pour déclencher l'animation de zoom-out après un délai
+                setTimeout(function() {
+                    modal.style.display = "none";
+                    modalContent.classList.remove("zoom-out");
+                }, 300); // Attendre 300 ms (0.3s) avant de cacher la pop-up
+            }
+        };
+    </script>
+            <!-- <script>console.log('ok');document.getElementById('all').style.display = 'none';document.getElementById('color').style.opacity = '1';</script> -->
+        <div style="width: 300px; height: 300px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; display: none;" id="cnter-img-bodymvin">
+            <img id="x" src="../Global/mods/logob.png" style="width: 100%; height: 100%; border-radius: 45px; opacity: 0; transition: opacity 0.5s;">
+        </div>
+        <div style="position: absolute; top: 0px; width: 100%; height: 100%; z-index: 1000; display: none;" class="ctner" id="ctner">
+            <div style="width:100%;height:100%;" id="bodymovin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" preserveAspectRatio="none" style="width: 100%; height: 100%;"><defs><clippath id="animationMask_oVXMhDFfkC"><rect width="1080" height="1080" x="0" y="0"></rect></clippath><clippath id="4HgCILRBhI"><path fill="#ffffff" clip-rule="nonzero" d=" M476.27176470588233,428.8167647058826 C455.4965704705883,431.09295658823555 455.62723870588246,442.4222908235296 429.32852941176486,458.3164705882354 C403.0237597647061,474.2166835294118 371.3042044705884,455.831411764706 376.3512352941178,489.98188235294117 C381.4429804705885,523.8114984705882 407.13842388235315,504.97015847058816 423.3073529411767,514.9899321176468 C437.87470588235317,523.599882352941 428.79815176470623,535.0535724705879 458.5820588235297,539.050764705882 C488.2567164705884,542.9868823529408 479.26262082352946,519.4050742352939 501.22647058823526,522.0835882352939 C524.1776505882351,524.7621022352938 513.4234778823528,565.7288801176467 554.9626470588233,550.816882352941 C573.8027979999997,543.771782588235 567.7530434117645,530.3422131764704 569.0382941176468,516.6884705882352 C572.2291247058821,486.13795811764703 587.937058823529,489.48717647058834 580.1377058823526,470.97905882352956 C570.6146732941173,448.55148352941194 542.6847230588232,486.0099828235296 524.1245294117645,474.50635294117666 C500.38747658823513,459.7810648235296 504.206768235294,425.5991787058826 476.27176470588233,428.8167647058826" fill-opacity="1"></path></clippath><clippath id="YU4txPbUWC"><path fill="#ffffff" clip-rule="nonzero" d=" M476,432.703 C457,435 456.49800000000005,445.49199999999996 431.249,460.246 C406,475 374.40599999999995,457 379.703,490 C385,523 410.084,503.806 426.333,512.843 C441,521 433.23,531.242 462.115,534.621 C491,538 480,515.594 501,518.297 C522,521 510.694,561.247 551.321,547.139 C569,541 564,528 565.297,516 C568.517,486.198 583,491 575.717,473.126 C566.983,451.691 539.352,488.079 521.887,477.224 C498.99999999999994,463 502.858,429.45599999999996 476,432.703" fill-opacity="1"></path></clippath></defs><g clip-path="url(#animationMask_oVXMhDFfkC)"><g clip-path="url(#YU4txPbUWC)" transform="matrix(0,0,0,0,540,540)" opacity="1"><rect width="1080" height="1080" fill="#ec2929"></rect></g><g clip-path="url(#4HgCILRBhI)" transform="matrix(0.015835210422454435,0,0,0.015835210422454435,531.4489863718746,531.4489863718746)" opacity="1" style="display: none;"><rect width="1080" height="1080" fill="#ec2929"></rect></g></g></svg></div>
+        </div>
+
+        <div class="modall" id="mdl" style="display: none;">
+            <div class="modall__content">
+            </div>
+        </div>
+        <script src="../Global/mods/bodymovin.js.téléchargement"></script>
+        <style>
+            #bodymovin {
+                width: 100%;
+                height: 100%;
+                display: block;
+                overflow: hidden;
+                transform: translate3d(0, 0, 0);
+                text-align: center;
+                opacity: 1;
+                z-index: 9998;
+            }
+
+            #close {
+                transition: opacity 0.4s ease 0.1s, color 0.2s, transform 0.2s;
+                opacity: 0;
+                border: none;
+                background: none;
+                position: fixed;
+                top: 1em;
+                right: 1em;
+                font-size: 2em;
+                padding: 1em;
+                cursor: pointer;
+                z-index: 9999;
+            }
+
+            .open #close {
+                opacity: 1;
+            }
+
+            #close:focus {
+                outline: none;
+                transform: scale(1.1);
+            }
+
+            .modall {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                z-index: 8888;
+            }
+
+            .modall__content {
+                opacity: 0;
+                transform: scale(0.8) translate3D(0, -20px, 0);
+                transition: opacity 0.2s, transform 0.8s cubic-bezier(0.09, 0.52, 0.25, 1);
+                text-align: center;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                padding: 1em;
+            }
+
+            .modall h1 {
+                text-transform: uppercase;
+                letter-spacing: 0.4em;
+            }
+
+            .modall p {
+                max-width: 25em;
+                line-height: 1.9;
+            }
+
+            .open .modall__content {
+                opacity: 1;
+                transform: scale(1) translate3D(0, 0, 0);
+            }
+        </style>
+        <script>
+            setTimeout(function() {
+                document.getElementById('x').style.opacity = 0;
+            }, 100);
+
+
+            // document.getElementById('all').style.display = 'none';
+
+            var animContainer = document.getElementById('bodymovin');
+
+            var animationData = {
+                "assets": [],
+                "v": "4.3.0",
+                "ddd": 0,
+                "layers": [{
+                    "ddd": 0,
+                    "ind": 0,
+                    "ty": 1,
+                    "nm": "blob__yellow",
+                    "ks": {
+                        "o": {
+                            "k": 100
+                        },
+                        "r": {
+                            "k": 0
+                        },
+                        "p": {
+                            "k": [540, 540, 0]
+                        },
+                        "a": {
+                            "k": [540, 540, 0]
+                        },
+                        "s": {
+                            "k": [{
+                                "i": {
+                                    "x": [0.222, 0.222, 0.667],
+                                    "y": [1, 1, 0.667]
+                                },
+                                "o": {
+                                    "x": [0.167, 0.167, 0.167],
+                                    "y": [0.167, 0.167, 0.167]
+                                },
+                                "n": ["0p222_1_0p167_0p167", "0p222_1_0p167_0p167", "0p667_0p667_0p167_0p167"],
+                                "t": 4,
+                                "s": [0, 0, 100],
+                                "e": [100, 100, 100]
+                            }, {
+                                "t": 15
+                            }]
+                        }
+                    },
+                    "hasMask": true,
+                    "masksProperties": [{
+                        "cl": true,
+                        "inv": false,
+                        "mode": "a",
+                        "pt": {
+                            "k": [{
+                                "i": {
+                                    "x": 0.833,
+                                    "y": 0.833
+                                },
+                                "o": {
+                                    "x": 0.167,
+                                    "y": 0.167
+                                },
+                                "n": "0p833_0p833_0p167_0p167",
+                                "t": 4,
+                                "s": [{
+                                    "i": [
+                                        [26.858, -3.247],
+                                        [25.249, -14.754],
+                                        [-5.297, -33],
+                                        [-16.249, -9.037],
+                                        [-28.885, -3.379],
+                                        [-21, -2.703],
+                                        [-40.627, 14.108],
+                                        [-1.297, 12],
+                                        [7.283, 17.874],
+                                        [17.465, 10.855]
+                                    ],
+                                    "o": [
+                                        [-19, 2.297],
+                                        [-25.249, 14.754],
+                                        [5.297, 33],
+                                        [14.667, 8.157],
+                                        [28.885, 3.379],
+                                        [21, 2.703],
+                                        [17.679, -6.139],
+                                        [3.22, -29.802],
+                                        [-8.734, -21.435],
+                                        [-22.887, -14.224]
+                                    ],
+                                    "v": [
+                                        [476, 432.703],
+                                        [431.249, 460.246],
+                                        [379.703, 490],
+                                        [426.333, 512.843],
+                                        [462.115, 534.621],
+                                        [501, 518.297],
+                                        [551.321, 547.139],
+                                        [565.297, 516],
+                                        [575.717, 473.126],
+                                        [521.887, 477.224]
+                                    ]
+                                }],
+                                "e": [{
+                                    "i": [
+                                        [145.748, 0],
+                                        [141.126, -140.618],
+                                        [22.297, -160],
+                                        [-7.41, -117.525],
+                                        [-128.115, -71.621],
+                                        [-127.399, 0],
+                                        [-141.321, 102.861],
+                                        [0, 194.556],
+                                        [64.283, 87.874],
+                                        [138.363, 82.457]
+                                    ],
+                                    "o": [
+                                        [-214.963, 0],
+                                        [-141.795, 141.284],
+                                        [-17.361, 124.581],
+                                        [3.667, 58.158],
+                                        [116.055, 64.879],
+                                        [236.39, 0],
+                                        [145.858, -106.163],
+                                        [0, -112.43],
+                                        [-95.835, -131.005],
+                                        [-116.724, -69.561]
+                                    ],
+                                    "v": [
+                                        [506, 3.703],
+                                        [219.249, 247.246],
+                                        [9.703, 488],
+                                        [92.333, 749.842],
+                                        [72.115, 1023.621],
+                                        [526, 936.297],
+                                        [953.321, 953.139],
+                                        [978.297, 592],
+                                        [1063.717, 236.126],
+                                        [768.887, 177.224]
+                                    ]
+                                }]
+                            }, {
+                                "i": {
+                                    "x": 0.833,
+                                    "y": 0.833
+                                },
+                                "o": {
+                                    "x": 0.167,
+                                    "y": 0.167
+                                },
+                                "n": "0p833_0p833_0p167_0p167",
+                                "t": 21,
+                                "s": [{
+                                    "i": [
+                                        [145.748, 0],
+                                        [141.126, -140.618],
+                                        [22.297, -160],
+                                        [-7.41, -117.525],
+                                        [-128.115, -71.621],
+                                        [-127.399, 0],
+                                        [-141.321, 102.861],
+                                        [0, 194.556],
+                                        [64.283, 87.874],
+                                        [138.363, 82.457]
+                                    ],
+                                    "o": [
+                                        [-214.963, 0],
+                                        [-141.795, 141.284],
+                                        [-17.361, 124.581],
+                                        [3.667, 58.158],
+                                        [116.055, 64.879],
+                                        [236.39, 0],
+                                        [145.858, -106.163],
+                                        [0, -112.43],
+                                        [-95.835, -131.005],
+                                        [-116.724, -69.561]
+                                    ],
+                                    "v": [
+                                        [506, 3.703],
+                                        [219.249, 247.246],
+                                        [9.703, 488],
+                                        [92.333, 749.842],
+                                        [72.115, 1023.621],
+                                        [526, 936.297],
+                                        [953.321, 953.139],
+                                        [978.297, 592],
+                                        [1063.717, 236.126],
+                                        [768.887, 177.224]
+                                    ]
+                                }],
+                                "e": [{
+                                    "i": [
+                                        [281.812, 0],
+                                        [0, 0],
+                                        [0, -256],
+                                        [0, -126.158],
+                                        [0, 0],
+                                        [-271.5, 0],
+                                        [0, 0],
+                                        [0, 148.875],
+                                        [0, 156.126],
+                                        [0, 0]
+                                    ],
+                                    "o": [
+                                        [-281.812, 0],
+                                        [0, 0],
+                                        [0, 256],
+                                        [0, 126.158],
+                                        [0, 0],
+                                        [271.5, 0],
+                                        [0, 0],
+                                        [0, -148.875],
+                                        [0, -156.126],
+                                        [0, 0]
+                                    ],
+                                    "v": [
+                                        [501.812, 0.016],
+                                        [-0.001, -0.004],
+                                        [-0.297, 416],
+                                        [0, 845.842],
+                                        [0.115, 1079.621],
+                                        [532.5, 1080.297],
+                                        [1080.036, 1079.997],
+                                        [1080.047, 652.875],
+                                        [1079.967, 268.126],
+                                        [1080.012, -0.026]
+                                    ]
+                                }]
+                            }, {
+                                "t": 32
+                            }]
+                        },
+                        "o": {
+                            "k": 100
+                        },
+                        "x": {
+                            "k": 0
+                        },
+                        "nm": "Mask 1"
+                    }],
+                    "sw": 1080,
+                    "sh": 1080,
+                    "sc": "#ec2929",
+                    "ip": 4,
+                    "op": 33,
+                    "st": 4,
+                    "bm": 0,
+                    "sr": 1
+                }, {
+                    "ddd": 0,
+                    "ind": 1,
+                    "ty": 1,
+                    "nm": "blob__white",
+                    "ks": {
+                        "o": {
+                            "k": 100
+                        },
+                        "r": {
+                            "k": 0
+                        },
+                        "p": {
+                            "k": [540, 540, 0]
+                        },
+                        "a": {
+                            "k": [540, 540, 0]
+                        },
+                        "s": {
+                            "k": [{
+                                "i": {
+                                    "x": [0.222, 0.222, 0.667],
+                                    "y": [1, 1, 0.667]
+                                },
+                                "o": {
+                                    "x": [0.167, 0.167, 0.167],
+                                    "y": [0.167, 0.167, 0.167]
+                                },
+                                "n": ["0p222_1_0p167_0p167", "0p222_1_0p167_0p167", "0p667_0p667_0p167_0p167"],
+                                "t": 0,
+                                "s": [0, 0, 100],
+                                "e": [100, 100, 100]
+                            }, {
+                                "t": 11
+                            }]
+                        }
+                    },
+                    "hasMask": true,
+                    "masksProperties": [{
+                        "cl": true,
+                        "inv": false,
+                        "mode": "a",
+                        "pt": {
+                            "k": [{
+                                "i": {
+                                    "x": 0.833,
+                                    "y": 0.833
+                                },
+                                "o": {
+                                    "x": 0.167,
+                                    "y": 0.167
+                                },
+                                "n": "0p833_0p833_0p167_0p167",
+                                "t": 0,
+                                "s": [{
+                                    "i": [
+                                        [26.858, -3.247],
+                                        [25.249, -14.754],
+                                        [-5.297, -33],
+                                        [-16.249, -9.037],
+                                        [-28.885, -3.379],
+                                        [-21, -2.703],
+                                        [-40.627, 14.108],
+                                        [-1.297, 12],
+                                        [7.283, 17.874],
+                                        [17.465, 10.855]
+                                    ],
+                                    "o": [
+                                        [-19, 2.297],
+                                        [-25.249, 14.754],
+                                        [5.297, 33],
+                                        [14.667, 8.157],
+                                        [28.885, 3.379],
+                                        [21, 2.703],
+                                        [17.679, -6.139],
+                                        [3.22, -29.802],
+                                        [-8.734, -21.435],
+                                        [-22.887, -14.224]
+                                    ],
+                                    "v": [
+                                        [476, 432.703],
+                                        [431.249, 460.246],
+                                        [379.703, 490],
+                                        [426.333, 512.843],
+                                        [462.115, 534.621],
+                                        [501, 518.297],
+                                        [551.321, 547.139],
+                                        [565.297, 516],
+                                        [575.717, 473.126],
+                                        [521.887, 477.224]
+                                    ]
+                                }],
+                                "e": [{
+                                    "i": [
+                                        [145.748, 0],
+                                        [141.126, -140.618],
+                                        [22.297, -160],
+                                        [-7.41, -117.525],
+                                        [-128.115, -71.621],
+                                        [-127.399, 0],
+                                        [-141.321, 102.861],
+                                        [0, 194.556],
+                                        [64.283, 87.874],
+                                        [138.363, 82.457]
+                                    ],
+                                    "o": [
+                                        [-214.963, 0],
+                                        [-141.795, 141.284],
+                                        [-17.361, 124.581],
+                                        [3.667, 58.158],
+                                        [116.055, 64.879],
+                                        [236.39, 0],
+                                        [145.858, -106.163],
+                                        [0, -112.43],
+                                        [-95.835, -131.005],
+                                        [-116.724, -69.561]
+                                    ],
+                                    "v": [
+                                        [506, 3.703],
+                                        [219.249, 247.246],
+                                        [9.703, 488],
+                                        [92.333, 749.842],
+                                        [72.115, 1023.621],
+                                        [526, 936.297],
+                                        [953.321, 953.139],
+                                        [978.297, 592],
+                                        [1063.717, 236.126],
+                                        [768.887, 177.224]
+                                    ]
+                                }]
+                            }, {
+                                "i": {
+                                    "x": 0.833,
+                                    "y": 0.833
+                                },
+                                "o": {
+                                    "x": 0.167,
+                                    "y": 0.167
+                                },
+                                "n": "0p833_0p833_0p167_0p167",
+                                "t": 17,
+                                "s": [{
+                                    "i": [
+                                        [145.748, 0],
+                                        [141.126, -140.618],
+                                        [22.297, -160],
+                                        [-7.41, -117.525],
+                                        [-128.115, -71.621],
+                                        [-127.399, 0],
+                                        [-141.321, 102.861],
+                                        [0, 194.556],
+                                        [64.283, 87.874],
+                                        [138.363, 82.457]
+                                    ],
+                                    "o": [
+                                        [-214.963, 0],
+                                        [-141.795, 141.284],
+                                        [-17.361, 124.581],
+                                        [3.667, 58.158],
+                                        [116.055, 64.879],
+                                        [236.39, 0],
+                                        [145.858, -106.163],
+                                        [0, -112.43],
+                                        [-95.835, -131.005],
+                                        [-116.724, -69.561]
+                                    ],
+                                    "v": [
+                                        [506, 3.703],
+                                        [219.249, 247.246],
+                                        [9.703, 488],
+                                        [92.333, 749.842],
+                                        [72.115, 1023.621],
+                                        [526, 936.297],
+                                        [953.321, 953.139],
+                                        [978.297, 592],
+                                        [1063.717, 236.126],
+                                        [768.887, 177.224]
+                                    ]
+                                }],
+                                "e": [{
+                                    "i": [
+                                        [281.812, 0],
+                                        [0, 0],
+                                        [0, -256],
+                                        [0, -126.158],
+                                        [0, 0],
+                                        [-271.5, 0],
+                                        [0, 0],
+                                        [0, 148.875],
+                                        [0, 156.126],
+                                        [0, 0]
+                                    ],
+                                    "o": [
+                                        [-281.812, 0],
+                                        [0, 0],
+                                        [0, 256],
+                                        [0, 126.158],
+                                        [0, 0],
+                                        [271.5, 0],
+                                        [0, 0],
+                                        [0, -148.875],
+                                        [0, -156.126],
+                                        [0, 0]
+                                    ],
+                                    "v": [
+                                        [501.812, 0.016],
+                                        [-0.001, -0.004],
+                                        [-0.297, 416],
+                                        [0, 845.842],
+                                        [0.115, 1079.621],
+                                        [532.5, 1080.297],
+                                        [1080.036, 1079.997],
+                                        [1080.047, 652.875],
+                                        [1079.967, 268.126],
+                                        [1080.012, -0.026]
+                                    ]
+                                }]
+                            }, {
+                                "t": 28
+                            }]
+                        },
+                        "o": {
+                            "k": 100
+                        },
+                        "x": {
+                            "k": 0
+                        },
+                        "nm": "Mask 1"
+                    }],
+                    "sw": 1080,
+                    "sh": 1080,
+                    "sc": "#ec2929",
+                    "ip": 0,
+                    "op": 33,
+                    "st": 0,
+                    "bm": 0,
+                    "sr": 1
+                }],
+                "ip": 0,
+                "op": 33,
+                "fr": 60,
+                "w": 1080,
+                "h": 1080
+            };
+
+            var params = {
+                container: animContainer,
+                renderer: 'svg',
+                loop: false,
+                autoplay: false,
+                animationData: animationData,
+                rendererSettings: {
+                    preserveAspectRatio: 'none'
+                }
+            };
+            var anim = bodymovin.loadAnimation(params);
+            var a = "1";
+
+            var body = document.body;
+
+            // anim.setDirection(-1);
+            console.log(anim.playDirection);
+
+            anim.playSegments([30, 0], true);
+
+            // document.getElementById('color').style.backgroundColor = '#0b0c0f';
+
+            anim.addEventListener('complete', function() {
+                document.getElementById('ctner').style.display = 'none';
+                document.getElementById('mdl').style.display = 'none';
+                // put z-index of div with class cnter-img-bodymvin to -1
+                document.getElementById('cnter-img-bodymvin').style.display = 'none';
+                // document.getElementById('all').style.display = 'inline';
+                // document.getElementById('color').style.opacity = '0';
+                // setTimeout(function() {
+                //     document.getElementById('color').style.display = 'none';
+                // }, 1000);
+
+            });
+        </script>
+                <style>
+            .bottom-center-text {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                font-size: 11px;
+                color: grey;
+                font-family: "poppins", sans-serif;
+                padding: 10px 0;
+            }
+        </style>
+    <div class="bottom-center-text">
+        © 2024 - 2025 AC Hub
+    </div>
+    
+    
+</div></body><iframe id="google_esf" name="google_esf" src="../Global/mods/zrt_lookup_fy2021.html" style="display: none;"></iframe></html>

@@ -1,0 +1,8 @@
+// document.addEventListener("DOMContentLoaded", function () {
+//   window.onload = function () {
+//     document.getElementById("preloader").style.opacity = 0;
+//     document.getElementById("preloader").style.zIndex = -1;
+//   };
+// });
+document.getElementById("preloader").style.opacity = 0;
+document.getElementById("preloader").style.zIndex = -1;

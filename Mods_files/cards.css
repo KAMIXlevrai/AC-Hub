@@ -1,0 +1,185 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(auto, 60px)) 1fr;
+    grid-gap: 40px;
+    padding: 60px 0;
+}
+
+@media (max-width: 500px) {
+    main {
+        margin-left: 0;
+    }
+}
+
+.text--medium {
+    font-family: "Open Sans", sans-serif;
+    font-size: 23px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ecf0f1;
+}
+
+.cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 100px;
+}
+
+.card {
+    grid-column-end: span 6;
+    display: flex;
+    flex-direction: column;
+    background-color: #111111;
+    /* cursor: pointer; */
+    transition: all 0.3s ease 0s;
+    height: 500px;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card__image-container {
+    width: 100%;
+    padding-top: 52%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image-container img {
+    /* width: 100%; */
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__content {
+    padding: 20px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+}
+
+.card__info {
+    position: relative;
+    left: 50%;
+}
+
+.card__price {
+    margin-left: auto;
+
+    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 2px solid;
+    border-color: #ec2929;
+
+    color: #ec2929;
+    border-radius: 20px;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+    main {
+        grid-template-columns: 10px repeat(6, 1fr) 10px;
+        grid-gap: 10px;
+    }
+    .cards {
+        grid-column: 2 / span 6;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+    }
+    .card {
+        grid-column-end: span 6;
+    }
+}
+
+.separator {
+    background-color: #ec2929;
+    height: 1px;
+    margin-bottom: 20px;
+}
+/* Preloader */
+
+#preloader {
+    overflow: hidden;
+    background: #121111 url(assest/loader.gif) no-repeat center center;
+    background-size: 15%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999;
+    color: #fff;
+}
+
+#preloader .jumper > div:nth-child(2) {
+    -webkit-animation-delay: 0.33333s;
+    animation-delay: 0.33333s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+    -webkit-animation-delay: 0.66666s;
+    animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+.aa {
+    text-decoration: none;
+    transition: 0.2s
+}
+
+.aa:hover{
+    background-color: #ec2929;
+    color: white
+}
+
+p {
+    font-family: "poppins", sans-serif;
+}
+
+@keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.card {
+    transition: transform 0.3s; /* définit la durée de l'animation */
+}
+
+.card:hover {
+    transform: scale(1.03); /* agrandit la carte de 10% lors du survol */
+    z-index:999;
+}

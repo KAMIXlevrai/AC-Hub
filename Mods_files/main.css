@@ -1,0 +1,141 @@
+body {
+  background-color: #0A0A0A;
+}
+/*.back-video {
+    position: absolute;
+    z-index: -4;
+    border-radius:95% 5% 81% 19% / 12% 62% 38% 88% ;
+    opacity: 50%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+} */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#discordBTN {
+  width: 40%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #8bc34a;
+  border: none;
+  transition: transform 0.3s ease;
+  max-width: 300px;
+}
+
+#discordBTN:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.back-video {
+  position: absolute;
+  z-index: -4;
+  /* border-radius: 95% 5% 81% 19% / 12% 62% 38% 88%; */
+  border-radius: 26% 26% 5% 5% / 0% 0% 100% 100%;
+  opacity: 0.5; /* Change to 0.5 for 50% opacity */
+  width: 96%;
+  left: 50%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%);
+}
+
+/* Adjust these media queries for responsive behavior */
+@media (max-width: 768px) {
+  .back-video {
+    width: 200%;
+    margin: 0;
+  }
+
+  #discordBTN p {
+    font-size: 10px;
+  }
+
+  #discordBTN {
+  }
+}
+
+/* slide animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cdecan {
+  animation-name: fadeIn;
+  animation-duration: 4s;
+  margin: 30px;
+  box-shadow: 0 0 0.1rem #ec2929;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+
+}
+
+.cdecan:hover {
+  transform: scale(1.1);
+  cursor:pointer;
+  box-shadow: 0 0 1rem #ec2929;
+
+}
+
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 55%; /* Adjust this value to center vertically */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "poppins", sans-serif;
+  text-align: center; /* Center-align the text */
+  width: 100%;
+  font-weight: 600;
+}
+
+.centered h1 {
+  font-size: 70px; /* Use relative font size based on viewport width */
+  font-weight: 600;
+  /* margin-bottom: 1.5vw; */
+  white-space: nowrap; /* Prevent text from wrapping to multiple lines */
+}
+.centered h5 {
+  font-size: 15px;
+}
+
+.main-search {
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  max-width: 1200px;
+}
+
+@media (min-width: 1921px) {
+  .centered h1 {
+    font-size: 153px;
+  }
+
+  .centered h5 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 768px) {
+  .centered h1 {
+    font-size: 50px;
+  }
+  .centered h5 {
+    font-size: 12px;
+  }
+  .main-search {
+    width: 80%;
+    height: 35px;
+  }
+}
+
+em {
+  color: #ec2929;
+}

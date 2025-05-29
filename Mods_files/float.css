@@ -1,0 +1,117 @@
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.cat-scrollable {
+    overflow: auto;
+    scrollbar-width: none; /* Masque la largeur de la barre de défilement */
+    -ms-overflow-style: none; /* Masque la barre de défilement pour Edge */
+}
+
+.cat-scrollable::-webkit-scrollbar {
+    display: none; /* Masque la barre de défilement pour les navigateurs basés sur WebKit */
+}
+
+.cat {
+    height: 500px;
+    background-color: #262525;
+    position: absolute;
+    top: 562px;
+    left: 15px;
+    z-index: 8888;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+
+    text-align: center;
+}
+
+.ann {
+    height: 290px;
+    background-color: #262525;
+    position: absolute;
+    top: 720px;
+    left: 15px;
+    z-index: 8888;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+
+    text-align: center;
+}
+
+.ann img:hover{
+    transform: scale(1.01);
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.cat h1, h2, h3 {
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+
+@media (max-width: 500px) {
+    .cat {
+        display: none;
+    }
+}
+
+.cat a {
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: grey;
+    transition: 0.6s;
+    font-size: 20px;
+    font-family: "poppins", sans-serif;
+    border-radius: 10px;
+    padding: 20px 40px 20px 40px;
+}
+
+.cat a:hover {
+    color: white;
+    background-color: grey
+}
+
+.a {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    padding: 10px;
+    width: 300px;
+    background-color: #0b0c0f;
+    transform: rotate(12deg);
+    border: solid #ec2929;
+    color: white;
+    border-radius: 10px;
+    z-index: 8888;
+    font-family: "poppins", sans-serif;
+}
+
+.a2 {
+    border: solid #ec2929;
+    background-color: #0b0c0f;
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    font-family: "poppins", sans-serif;
+    z-index: 8888;
+}
+
+
+@media (max-width: 1816px) {
+    .a {
+        display: none;
+    }
+}
+@media (min-width: 1816px) {
+    .a2 {
+        display: none;
+    }
+}
+
